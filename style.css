@@ -10,8 +10,8 @@ body {
 }
 .input-label {
   display: flex;
-  /* justify-content: center; */
   align-items: baseline;
+  width: 400px;
 }
 .logo {
   background-size: cover;
@@ -341,6 +341,7 @@ textarea {
   border-radius: 0px 0px 0px 0px;
   padding: 0px 16px;
   border: 2px solid rgba(0, 0, 0, 0.05);
+  max-width: 120px;
 }
 
 .button-portionen:hover {
@@ -380,11 +381,9 @@ table tr:nth-child(odd) {
 .td-left {
   font-weight: 400;
   text-align: right;
-  width: 9%;
+  width: 10%;
   height: 50px;
   font-size: 20px;
-  
-  
 }
 .td-right {
   width: 90%;
@@ -570,8 +569,6 @@ table tr:nth-child(odd) {
   .button-portionen {
     width: 150px;
     text-align: center;
-    /* border-radius: 6px; */
-    /* border-radius: 6px 0px 0px 6px; */
   }
 
   .recipe-profile-name {
@@ -690,7 +687,9 @@ table tr:nth-child(odd) {
   nav a {
     font-size: 16px;
   }
-
+  .input-label {
+    width: 100px;
+  }
   #quantity {
     width: 100px;
     border-radius: 0px 0px 0px 0px;
@@ -703,12 +702,6 @@ table tr:nth-child(odd) {
     gap: 12px;
   }
 
-  .button-portionen {
-    /* height: auto; */
-    /* width: 150px; */
-    /* padding: 0px 0px; */
-    /* border-radius: 6px; */
-  }
 
   .img-recipe-logo {
     height: 20px;
@@ -757,7 +750,7 @@ textarea {
 .td-left {
   font-weight: 400;
   text-align: right;
-  width: 9%;
+  width: 15%;
   height: 50px;
   font-size: 16px;
 }

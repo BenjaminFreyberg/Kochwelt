@@ -44,7 +44,15 @@
       </section>
       <section class="third-section-recipe">
         <div class="third-container-recipe">
-        Zutaten für <input type="number" id="quantity" name="quantity" min="1" max="20" placeholder="4"><a class="button-portionen" onclick="ausrechnen2()">Portionen</a>
+          <form class="buttons">
+            
+            <label>
+              <div class="input-label">
+                Zutaten für <input type="number" class="input-design" id="quantity" name="quantity" min="1" max="20" placeholder="1" required>
+                <input type="button" class="button-portionen" value="Portionen" onclick="ausrechnen2()">
+              </div>
+          </label>
+          </form>
         </div>
       </section>
       <section class="fourth-section-recipe">
@@ -52,40 +60,40 @@
         <table class="ingredients">
             <tbody>
             <tr>
-                <td width="15%" class="td-left" id="ingredients1">300 g </td>
-                <td width="85%" class="td-right">Babyspinat</td>
+                <td class="td-left" id="ingredients1">300 g </td>
+                <td class="td-right">Babyspinat</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left" id="ingredients2">400 g </td>
-                <td width="85%" class="td-right">Erdnussbutter</td>
+                <td class="td-left" id="ingredients2">400 g </td>
+                <td class="td-right">Erdnussbutter</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left" id="ingredients3">250 g</td>
-                <td width="85%" class="td-right">Palmöl</td>
+                <td class="td-left" id="ingredients3">250 g</td>
+                <td class="td-right">Palmöl</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left" id="ingredients4">500 ml</td>
-                <td width="85%" class="td-right">Wasser</td>
+                <td class="td-left" id="ingredients4">500 ml</td>
+                <td class="td-right">Wasser</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left" id="ingredients5">nach Belieben</td>
-                <td width="85%" class="td-right">Chili</td>
+                <td class="td-left" id="ingredients5">nach Belieben</td>
+                <td class="td-right">Chili</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left" id="ingredients6">1 EL</td>
-                <td width="85%" class="td-right">Tomatenmark</td>
+                <td class="td-left" id="ingredients6">1 EL</td>
+                <td class="td-right">Tomatenmark</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left" id="ingredients7">2 Packungen </td>
-                <td width="85%" class="td-right">Fumbwa</td>
+                <td class="td-left" id="ingredients7">2 Packungen </td>
+                <td class="td-right">Fumbwa</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left" id="ingredients8">2 TL</td>
-                <td width="85%" class="td-right">Knoblauchpaste</td>
+                <td class="td-left" id="ingredients8">2 TL</td>
+                <td class="td-right">Knoblauchpaste</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left" id="ingredients9">1 TL</td>
-                <td width="85%" class="td-right">Muskatnuss</td>
+                <td class="td-left" id="ingredients9">1 TL</td>
+                <td class="td-right">Muskatnuss</td>
             </tr>
         </tbody>
     </table>
@@ -164,7 +172,7 @@ Das Fufu mit Fumbwa auf einem Teller anrichten und genießen. Optional mit gegri
         </div>
       </footer>
 
-      <script src="./object.js"></script>
+       <script src="./object.js"></script>
     </div>
   </body>
 </html>

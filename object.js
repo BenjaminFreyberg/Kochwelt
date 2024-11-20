@@ -8,8 +8,9 @@ function ausrechnen1() {
         { id: "ingredients8", base: 5, unit: "g"},                  // Sesamsamen
         { id: "ingredients9", base: 12.5, unit: "ml"},              // Sojasoße
         { id: "ingredients10", base: 2.5, unit: "g"}                // Speisestärke
-    ];
 
+    ];
+    
     // Hole die Eingabe für die Menge
     const quantityInput = document.getElementById("quantity");
     const quantity = parseFloat(quantityInput.value) || 1; // Standardwert: 1 Portion
@@ -20,14 +21,18 @@ function ausrechnen1() {
         if (element) {
             const totalAmount = ingredient.base * quantity;
 
-            // Überprüfen, ob die Menge 1000 g überschreitet
             if (ingredient.unit === "g" && totalAmount >= 1000) {
                 const kiloAmount = (totalAmount / 1000).toFixed(2);
                 element.innerHTML = `${kiloAmount} kg`;
-            } else if (ingredient.unit === "ml" && totalAmount >=1000)
-                { const kiloAmount = (totalAmount /1000).toFixed(2);
-                    element.innerHTML = `${kiloAmount} L`;
-            } else {
+            } else if (ingredient.unit === "ml" && totalAmount >= 1000) {
+                const literAmount = (totalAmount / 1000).toFixed(2);
+                element.innerHTML = `${literAmount} l`;
+            } else if (ingredient.unit === "TL" && !Number.isInteger(totalAmount)) {
+                
+                element.innerHTML = `${totalAmount.toFixed(2)} TL`;
+        
+            }
+            else {
                 element.innerHTML = `${totalAmount.toFixed(0)} ${ingredient.unit}`;
             }
         }
@@ -62,7 +67,12 @@ function ausrechnen2() {
             } else if (ingredient.unit === "ml" && totalAmount >= 1000) {
                 const literAmount = (totalAmount / 1000).toFixed(2);
                 element.innerHTML = `${literAmount} l`;
-            } else {
+            } else if (ingredient.unit === "TL" && !Number.isInteger(totalAmount)) {
+                
+                element.innerHTML = `${totalAmount.toFixed(2)} TL`;
+        
+            }
+            else {
                 element.innerHTML = `${totalAmount.toFixed(0)} ${ingredient.unit}`;
             }
         }
@@ -96,11 +106,16 @@ function ausrechnen3() {
             } else if (ingredient.unit === "ml" && totalAmount >= 1000) {
                 const literAmount = (totalAmount / 1000).toFixed(2);
                 element.innerHTML = `${literAmount} l`;
-            } else {
+            } else if (ingredient.unit === "TL" && !Number.isInteger(totalAmount)) {
+                
+                element.innerHTML = `${totalAmount.toFixed(2)} TL`;
+        
+            }
+            else {
                 element.innerHTML = `${totalAmount.toFixed(0)} ${ingredient.unit}`;
             }
         }
-    });
+    });;
 }
 function ausrechnen4() {
     const baseIngredients = [
@@ -119,7 +134,7 @@ function ausrechnen4() {
     const quantityInput = document.getElementById("quantity");
     const quantity = parseFloat(quantityInput.value) || 1; // Standardwert: 1 Portion
 
-    // Iteriere über die Zutaten und aktualisiere die Menge
+    // Menge der Zutaten und aktualisiere die Menge
     baseIngredients.forEach(ingredient => {
         const element = document.getElementById(ingredient.id);
         if (element) {
@@ -131,7 +146,12 @@ function ausrechnen4() {
             } else if (ingredient.unit === "ml" && totalAmount >= 1000) {
                 const literAmount = (totalAmount / 1000).toFixed(2);
                 element.innerHTML = `${literAmount} l`;
-            } else {
+            } else if (ingredient.unit === "TL" && !Number.isInteger(totalAmount)) {
+                
+                element.innerHTML = `${totalAmount.toFixed(2)} TL`;
+        
+            }
+            else {
                 element.innerHTML = `${totalAmount.toFixed(0)} ${ingredient.unit}`;
             }
         }

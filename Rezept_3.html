@@ -46,7 +46,15 @@
       </section>
       <section class="third-section-recipe">
         <div class="third-container-recipe">
-        Zutaten für <input type="number" id="quantity" name="quantity" min="1" max="20" placeholder="4"><a class="button-portionen" onclick="ausrechnen3()">Portionen</a>
+          <form class="buttons">
+            
+            <label>
+              <div class="input-label">
+                Zutaten für <input type="number" class="input-design" id="quantity" name="quantity" min="1" max="20" placeholder="1" required>
+                <input type="button" class="button-portionen" value="Portionen" onclick="ausrechnen4()">
+              </div>
+          </label>
+          </form>
         </div>
       </section>
       <section class="fourth-section-recipe">
@@ -54,44 +62,40 @@
         <table class="ingredients">
             <tbody>
             <tr>
-                <td width="15%" class="td-left">2 große </td>
-                <td width="85%" class="td-right">Äpfel</td>
+                <td class="td-left" id="ingredients1">2 große </td>
+                <td class="td-right">Äpfel</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left">2 Größe M</td>
-                <td width="85%" class="td-right">Eier</td>
+                <td class="td-left" id="ingredients2">2 Größe M</td>
+                <td class="td-right">Eier</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left">150 g</td>
-                <td width="85%" class="td-right">Mehl</td>
+                <td class="td-left" id="ingredients3">150 g</td>
+                <td class="td-right">Mehl</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left">100 ml</td>
-                <td width="85%" class="td-right">Milch</td>
+                <td class="td-left" id="ingredients4">100 ml</td>
+                <td class="td-right">Milch</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left">60 g</td>
-                <td width="85%" class="td-right">Zucker</td>
+                <td class="td-left" id="ingredients5">60 g</td>
+                <td class="td-right">Zucker</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left">1 Päck.</td>
-                <td width="85%" class="td-right">Vanillezucker</td>
+                <td class="td-left" id="ingredients6">1 Päck.</td>
+                <td class="td-right">Vanillezucker</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left">1/4 TL</td>
-                <td width="85%" class="td-right">Backpulver</td>
+                <td class="td-left" id="ingredients7">1/4 TL</td>
+                <td class="td-right">Backpulver</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left">Butterschmalz je</td>
-                <td width="85%" class="td-right">Apfelscheibe</td>
+                <td class="td-left" id="ingredients9">3 TL</td>
+                <td class="td-right">Zucker</td>
             </tr>
             <tr>
-                <td width="15%" class="td-left">3 TL</td>
-                <td width="85%" class="td-right">Zucker</td>
-            </tr>
-            <tr>
-                <td width="15%" class="td-left">1 TL</td>
-                <td width="85%" class="td-right">Zimt</td>
+                <td class="td-left" id="ingredients10">1 TL</td>
+                <td class="td-right">Zimt</td>
             </tr>
         </tbody>
     </table>
