@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="website icon" href="./img/icon-logo.png">
+    
+  </head>
+  <body>
+    
+      <header id="header">
+        <div class="content-limit-header">
+          <img class="logo" src="./logo.png" alt="Kochwelt Logo" />
+
+          <nav>
+            <a href="index.html">Start</a>
+            <a href="Rezept_otd.html">Rezept des Tages</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+          </nav>
+        </div>
+      </header>
+      <section class="first-section-recipe">
+        <div class="first-container-recipe">
+          <h1>Sesam-Hähnchen mit Reis und Brokkoli</h1>
+          <img src="./img/Rezept_1.jpeg" class="img-recipe" />
+        </div>
+      </section>
+      <section class="second-section-recipe">
+        <div class="second-container-recipe">
+          <div class="first-news-recipe">
+            <img src="./img/icons/clock-regular.svg" class="img-recipe-logo" />25 Min
+          </div>
+          <div class="first-news-recipe">
+            <img src="./img/icons/brain-solid.svg" class="img-recipe-logo" />Mittel
+          </div>
+          <div class="first-news-recipe">
+            <img src="./img/icons/calendar-alt-regular.svg" class="img-recipe-logo" />469kcal
+          </div>
+        </div>
+      </section>
+      <section class="section-divider">
+      <div class="divider"></div>
+      </section>
+      <section class="third-section-recipe">
+        <div class="third-container-recipe">
+          <form class="buttons">
+            <label>
+        Zutaten für <input type="number" id="quantity" name="quantity" min="1" max="20" placeholder="1" required>
+        <input type="submit" class="button-portionen" value="Portionen" onclick="ausrechnen1()">
+        </label>
+        
+      </form>
+        </div>
+      </section>
+      <section class="fourth-section-recipe">
+        <div class="fourth-container-recipe">
+        <table class="ingredients">
+            <tbody>
+            <tr>
+                <td width="15%" class="td-left" id="ingredients1">125 g </td>
+                <td width="85%" class="td-right">Brokkoli</td>
+            </tr>
+            <tr>
+                <td width="15%" class="td-left" id="ingredients2">150 g </td>
+                <td width="85%" class="td-right">Hähnchenbrustfilet</td>
+            </tr>
+            <tr>
+                <td width="15%" class="td-left" id="ingredients3">50 g</td>
+                <td width="85%" class="td-right">Vollkornreis</td>
+            </tr>
+            <tr>
+                <td width="15%" class="td-left" id="ingredients4">12,5 g</td>
+                <td width="85%" class="td-right">Honig</td>
+            </tr>
+            <tr>
+                <td width="15%" class="td-left" id="ingredients5">22,5 ml </td>
+                <td width="85%" class="td-right">Wasser</td>
+            </tr>
+            <tr>
+                <td width="15%" class="td-left" id="ingredients6">nach Belieben</td>
+                <td width="85%" class="td-right">Ingwer</td>
+            </tr>
+            <tr>
+                <td width="15%" class="td-left" id="ingredients7">nach Belieben</td>
+                <td width="85%" class="td-right">Paprika-Flocken</td>
+            </tr>
+            <tr>
+                <td width="15%" class="td-left" id="ingredients8">5 g</td>
+                <td width="85%" class="td-right">Sesamsamen</td>
+            </tr>
+            <tr>
+                <td width="15%" class="td-left" id="ingredients9">12,5 ml</td>
+                <td width="85%" class="td-right">Sojasoße</td>
+            </tr>
+            <tr>
+                <td width="15%" class="td-left" id="ingredients10">2,5 g </td>
+                <td width="85%" class="td-right">Speisestärke</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </section>
+
+    <section class="first-section-recipe">
+      <div class="divider"></div>
+      </section>
+    <section class="section-divider">
+    <div class="fifth-container-recipe">
+      <div class="fifth-headline">
+        <h2>Zubereitung</h2>
+      </div>
+      <div class="fifth-news-recipe-icon">
+        <div id="fifth-news-recipe-id">
+        <img src="/clock-regular.svg" class="img-recipe-logo" />25 Min
+      </div>
+      <div class="fifth-news-recipe">
+        <img src="/clock-regular.svg" class="img-recipe-logo" />25 Min Gesamtzeit
+      </div>
+        </div>
+      <div class="fifth-container-content">
+        <p> Den Vollkornreis nach Packungsanweisung kochen.<br> 
+          Währenddessen den Brokkoli in kleine Röschen schneiden und in einem Topf mit kochendem Wasser für ca. 7-8 Minuten garen.<br> 
+          Die Hähnchenbrustfilets in kleine Stücke schneiden und in einer beschichteten Pfanne mit etwas Wasser anbraten. <br> 
+          Für die Saucee Honig, Sojasauce, Wasser, Stärke sowie Ingwer und Paprika-Flocken in einer kleinen Schüssel verrühren.<br> 
+          Die Sauce ebenfalls in die Pfanne geben und für 10 Minuten köcheln lassen, bis das Hähnchen sie aufgenommen hat. <br> 
+          Danach mit Sesam bestreuen und alles auf einem Teller anrichten.<br>  
+          Lass es dir schmecken!<br> 
+        </p>
+      </div>
+    </div>
+    </section>
+
+    <section class="last-section-recipe">
+      <div class="last-container-recipe">
+        <div class="recipe-headline">
+          <h3>Rezept erstellt von</h3>
+        </div>
+        <div class="recipe-profile-name">
+          <img src="./img/Profilbild.jpg" class="profile-logo"> 
+          <span class="profile-name">Benjamin</span>
+        </div>
+
+
+      </div>
+
+
+
+    </section>
+      <footer>
+        <div class="footer-limit">
+          <div class="img-footer-container">
+            <img src="./logo.png" alt="logo" class="logo-footer" />
+          </div>
+
+          <div class="img-footer-container">
+            <img
+              src="./img/facebook_logo.svg"
+              alt="facebook"
+              class="img-footer"
+            />
+            <img src="./img/X-Logo-rund.png" alt="X" class="img-footer" />
+            <img
+              src="./img/instagram_logo.svg"
+              alt="instagra"
+              class="img-footer"
+            />
+          </div>
+        </div>
+      </footer>
+      <script src="./object.js"></script>
+      
+    </div>
+  </body>
+</html>
